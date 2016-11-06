@@ -9,6 +9,7 @@
     <style>
         .up{width:100%;height:60%;background: #caae5c;position:absolute;top:-10%;left:0;z-index:2}
         .down{width:100%;height:60%;background:#caae5c;position:absolute;bottom:-10%;left:0;z-index:2}
+        .swiper-slide img{height:100%;width:100%}
     </style>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/swiper-3.4.0.min.js"></script>
@@ -19,7 +20,7 @@
             var mySwiper = new Swiper(".swiper-container",{
                 loop:false,
                 direction:"vertical",
-                height : window.innerHeight,
+                 height :$(window).outerHeight(),
                 onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
                     swiperAnimateCache(swiper); //隐藏动画元素
                     swiperAnimate(swiper); //初始化完成开始动画
@@ -36,27 +37,27 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide" >
             <div class="up ani" swiper-animate-effect="outup" swiper-animate-duration="1s"></div>
-            <img src="images/zhiwu_320x480.png" width="100%" height="100%" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"  >
+            <img src="images/zhiwu_320x480.png"  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"  >
             <div class="down ani" swiper-animate-effect="outdown" swiper-animate-duration="1s"></div>
         </div>
         <div class="swiper-slide">
             <div class="up ani" swiper-animate-effect="outup" swiper-animate-duration="1s" ></div>
-            <img src="images/zhiwu2.jpg" width="100%" height="100%" class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="1s" >
+            <img src="images/zhiwu2.jpg"  class="ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="1s" >
             <div class="down ani" swiper-animate-effect="outdown" swiper-animate-duration="1s"></div>
         </div>
         <div class="swiper-slide " >
             <div class="up ani" swiper-animate-effect="outup" swiper-animate-duration="1s" ></div>
-            <img src="images/zhiwu3.png" width="100%" height="100%" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" >
+            <img src="images/zhiwu3.png" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" >
             <div class="down ani" swiper-animate-effect="outdown" swiper-animate-duration="1s"></div>
         </div>
         <div class="swiper-slide" >
             <div class="up ani" swiper-animate-effect="outup" swiper-animate-duration="1s" ></div>
-            <img src="images/zhiwu4.jpg" width="100%" height="100%" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" >
+            <img src="images/zhiwu4.jpg"  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" >
             <div class="down ani" swiper-animate-effect="outdown" swiper-animate-duration="1s"></div>
         </div>
         <div class="swiper-slide" >
             <div class="up ani" swiper-animate-effect="outup" swiper-animate-duration="1s"></div>
-            <img src="images/zhiwu5.jpg" width="100%" height="100%" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" >
+            <img src="images/zhiwu5.jpg"  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" >
             <div class="down ani" swiper-animate-effect="outdown" swiper-animate-duration="1s"></div>
         </div>
     </div>
